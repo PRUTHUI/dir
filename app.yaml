@@ -1,3 +1,7 @@
 runtime: python27
 entrypoint: test:app
 threadsafe: true
+handlers:
+
+- url: /blog
+  script: main.py
