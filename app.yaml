@@ -4,4 +4,4 @@ threadsafe: true
 handlers:
 
 - url: /blog
-  script: main.py
+  script: test.py
