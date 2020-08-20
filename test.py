@@ -1,7 +1,9 @@
-# This program adds two numbers provided by the user.
-num1 = input('Enter first number: ')
-num2 = input('Enter second number: ')
-# Add two numbers.
-sum = num1 + num2
-# Display the sum.
-print(sum)
+import webapp2
+
+class MainPage(webapp2.RequestHandler):
+    def get(self):
+        self.response.out.write('Hello prueba!')
+
+app = webapp2.WSGIApplication([('/', MainPage),
+                               ('/blog', MainPage)],
+                              debug=True)
