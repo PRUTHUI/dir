@@ -1,7 +1,4 @@
 runtime: python27
 entrypoint: test:app
-threadsafe: true
-handlers:
+threadsafe: false
 
-- url: /blog
-  script: test.py
